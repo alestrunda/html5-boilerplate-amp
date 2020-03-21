@@ -1,0 +1,14 @@
+input,
+textarea {
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}

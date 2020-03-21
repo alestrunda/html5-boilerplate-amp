@@ -1,0 +1,25 @@
+//generate text colors
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+//generate text line-heights
+@each $key, $value in $line-heights {
+  .text-ln-#{$key} {
+    line-height: $value;
+  }
+}
+
+.text-break {
+  word-break: break-all;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}

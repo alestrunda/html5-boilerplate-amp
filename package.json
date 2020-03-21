@@ -1,0 +1,65 @@
+{
+  "name": "html5-boilerplate",
+  "description": "HTML5 boilerplate for new web sites",
+  "version": "0.1.0",
+  "author": "Aleš Trunda <alestrunda@gmail.com> (https://alestrunda.eu)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alestrunda/html5-boilerplate-amp.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-my-bundler": "./gulp-my-bundler",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "postcss-discard-comments": "^4.0.2",
+    "prettier": "^1.19.1",
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "declaration-block-no-duplicate-properties": true,
+      "at-rule-empty-line-before": [
+        "never",
+        {
+          "ignoreAtRules": [
+            "import"
+          ]
+        }
+      ],
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "function",
+            "if",
+            "each",
+            "else",
+            "error",
+            "include",
+            "mixin",
+            "return",
+            "warn"
+          ]
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "jsxBracketSameLine": true
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

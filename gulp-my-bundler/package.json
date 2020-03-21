@@ -1,0 +1,9 @@
+{
+  "name": "gulp-my-bundler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "purgecss": "^2.0.6"
+  }
+}
